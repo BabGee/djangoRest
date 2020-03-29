@@ -1,0 +1,79 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tasty Recipes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'recipe/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'recipe/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'recipe/css/responsive.css' %}"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+   {% include 'recipe/navbar.html' %}
+    <!-- header-end -->
+
+   {% block content %}
+
+   {% endblock content %}
+
+    <!-- footer  -->
+   {% include 'recipe/footer.html' %}
+    <!--/ footer  -->
+
+    <!-- JS here -->
+    <script src="{% static 'recipe/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'recipe/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'recipe/js/popper.min.js' %}"></script>
+    <script src="{% static 'recipe/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'recipe/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'recipe/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'recipe/js/ajax-form.js' %}"></script>
+    <script src="{% static 'recipe/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'recipe/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'recipe/js/scrollIt.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'recipe/js/wow.min.js' %}"></script>
+    <script src="{% static 'recipe/js/nice-select.min.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'recipe/js/plugins.js' %}"></script>
+    <script src="{% static 'recipe/js/gijgo.min.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'recipe/js/contact.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.form.js' %}"></script>
+    <script src="{% static 'recipe/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'recipe/js/mail-script.js' %}"></script>
+
+    <script src="{% static 'recipe/js/main.js' %}"></script>
+</body>
+
+</html>

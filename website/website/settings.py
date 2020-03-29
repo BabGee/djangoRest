@@ -25,21 +25,14 @@ SECRET_KEY = 'w2jun0!yc&wng0#z)@_c(9x(x#7)h1yqs65h-_fv!lm@5j*2o('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'web.apps.WebConfig',
-    'user.apps.UserConfig',
+    'recipe.apps.RecipeConfig',
     'rest_framework',
-    'rest_framework.authtoken',
-    'rest_auth',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'rest_auth.registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,15 +121,21 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = 'user.CustomUser'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
-REST_FRAMEWORK = {
-    'DEAFAULT_AUTHENTIFICATION_CLASSES':[
-        'rest_framework.authentification.SessionAuthentification',
-        'rest_framework.authentification.TokenAuthentification'
-    ],
-}
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES':(
+#         'rest_framework.permissions.IsAuthenticated', #OrReadOnly
+#     ),
+#     'DEFAULT_AUTHENTIFICATION_CLASSES':(
+#         'rest_framework.authentification.SessionAuthentification',
+#         'rest_framework.authentification.TokenAuthentification,'
+#     ),
+# }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SITE_ID = 1
+
+#SITE_ID = 1
